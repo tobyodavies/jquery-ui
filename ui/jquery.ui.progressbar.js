@@ -61,7 +61,7 @@ $.widget( "ui.progressbar", {
 	},
 
 	_setOption: function( key, value ) {
-		if ( key === "value" || key === "animation" ) {
+		if ( key === "value" ) {
 			this.options[ key ] = value;
 			this._refreshValue();
 			if ( this._value() === this.options.max ) {

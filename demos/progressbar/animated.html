@@ -12,9 +12,8 @@
 	<script>
 	$(function() {
 		$( "#progressbar" ).progressbar({
-			value: 59,
-			animation: true
-		});
+			value: 59
+		}).find( ".ui-progressbar-value" ).addClass( "ui-progressbar-animated-dark" );
 	});
 	</script>
 </head>
@@ -25,7 +24,10 @@
 <div class="demo-description">
 <p>
 This progressbar has an animated fill by setting the
-<code>animation option</code>.
+<code>ui-progressbar-animated-dark</code> class
+on the
+<code>.ui-progressbar-value</code>
+element.
 </p>
 </div>
 </body>
